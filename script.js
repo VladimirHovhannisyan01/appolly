@@ -57,7 +57,7 @@ const moveToSlide = (index) => {
     dots[currentIndex].classList.add("active");
 };
 
-// Динамически создаём отзывы и точки
+
 testimonials.forEach((testimonial, index) => {
     const card = document.createElement("div");
     card.classList.add("testimonial-card");
@@ -76,13 +76,10 @@ testimonials.forEach((testimonial, index) => {
     dotsContainer.appendChild(dot);
 });
 
-// Обновляем позицию при изменении экрана
 window.addEventListener("resize", updateSlidePosition);
 
-// Автоматическое переключение каждые 4 секунды
 setInterval(() => {
     moveToSlide(currentIndex + 1);
 }, 4000);
 
-// Устанавливаем начальную позицию
 updateSlidePosition();
