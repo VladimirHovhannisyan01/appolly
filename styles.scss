@@ -429,7 +429,6 @@ header{
 }
 
 
-// 🔹 Переменные для цветов
 $primary-color: #4a3aff;
 $secondary-color: #6b5bff;
 $text-color: white;
@@ -509,13 +508,11 @@ $button-shadow: rgba(0, 0, 0, 0.3);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
       
-        // Иконка Play
         i {
           font-size: 24px;
           color: $primary-color;
         }
       
-        // Hover-эффект
         &:hover {
           transform: translate(-50%, -50%) scale(1.1);
           box-shadow: 0 5px 20px $shadow-color;
@@ -525,8 +522,8 @@ $button-shadow: rgba(0, 0, 0, 0.3);
 }
 
 
-$primary-color: #1e1e1e; // Основной цвет текста
-$accent-color: #3652ff; // Акцентный цвет (обводка)
+$primary-color: #1e1e1e;
+$accent-color: #3652ff;
 $card-bg: #fff;
 $shadow-color: rgba(0, 0, 0, 0.1);
 $border-radius: 10px;
@@ -1031,7 +1028,7 @@ $shadow: rgba(0, 0, 0, 0.1);
     margin-right: auto;
     display: flex;
     align-items: center;
-    gap: 18px; // Отступ между иконкой и текстом
+    gap: 18px;
 
     .icon {
       width: 100px;
@@ -1056,8 +1053,6 @@ $shadow: rgba(0, 0, 0, 0.1);
   
 }
 .divider {
-    // flex-basis: 200px;
-    // width: 0;
     height: 117px;
     border: 2px solid rgba(108, 108, 114, 1);
     margin: 0 50px;
