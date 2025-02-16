@@ -76,7 +76,6 @@ testimonials.forEach((testimonial, index) => {
     dotsContainer.appendChild(dot);
 });
 
-window.addEventListener("resize", updateSlidePosition);
 
 setInterval(() => {
     moveToSlide(currentIndex + 1);
